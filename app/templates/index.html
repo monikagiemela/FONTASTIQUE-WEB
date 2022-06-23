@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <h5 class="fw-light">Have an image with text and you don’t know what the font is?
+    <br>Upload it, and we’ll find the fonts that match.</h5>
+    <br>
+         
+    <section>
+        <form accept="image/.jpeg,.jpg,.png,.pdf" action="/" id="file-dropzone" class="dropzone">
+        <div class="dz-message"><ion-icon name="cloud-upload"></ion-icon><br>  
+            <span>Drag & Drop your image here or click to identify your font!</span>     
+        </div>
+        </form>
+    </section> 
+    <br><br>
+    <div id="try-another"></div>
+    <br>
+    
+    <h5 class="fw-light" id="max-result"></h5>
+    <h5 class="fw-light" id="top-three-header"></h5>
+    
+    <section class="container" id="results">        
+        <br>    
+        <div class="row gy-5 gx-5" id="top-results">   
+        </div>
+            <section id="generated-text"></section>
+            <br>
+            <h6 class="fw-light" id="top-three-result"></h6>
+        <br>
+    </section>      
+{% endblock %}

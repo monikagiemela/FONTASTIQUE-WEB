@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: #535658;
+    text-decoration: none; 
+}
+a:hover {
+    color: #535658;
+    text-decoration: none;
+    font-weight: bold;
+  }
+.purple {
+    color: #e714ff;
+}
+.yellow {
+    color: #f7ff14;
+}
+body {
+    background-color: #fff;
+    color: #535658;
+    font-family:'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+
+/**--------- NAVBAR -----------**/
+.navbar-custom {
+    background-color: lightgreen;
+}
+.navbar-brand {
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+/** ------------ FOOTER ------------- **/
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    position: fixed;
+}
+/** ---------- FILE DROP ZONE -----------**/
+#button-confirm {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 3px;
+    background-color: #e714ff;
+    border: 5px solid #e714ff;
+    border-radius: 25px;
+    font-weight: 300;
+    z-index: 9999;
+}
+
+.dropzone {
+margin: auto;
+max-width: 400px;
+height: 350px;
+padding: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+font-size: 20px;
+cursor: pointer;
+color: #cccccc;
+border: 5px dashed #f7ff14;
+border-radius: 10px;
+box-shadow: 0px 2px 20px 0px #f2f2f2;       
+}
+.dropzone--over {
+border-style: solid;
+}
+.data-dz-thumbnail {
+width: 200px;
+height: 200px;
+border-radius: 10px;
+overflow: hidden;
+background-color: #cccccc;
+background-size: cover;
+position: absolute;
+}
+.data-dz-thumbnail::after {
+content: attr(data-label);
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 5px 0;
+color: #ffffff;
+background: rgba(0, 0, 0, 0.75);
+font-size: 14px;
+text-align: center    
+}
+#editor {
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: 9999;
+   background-color: #000; 
+}
+ion-icon {
+   font-size: 50px;
+    margin-bottom: 6px;
+}
+
+/** ---------- RESULTS -----------**/
+#try-another-button {
+    position: relative;
+    left: 50;
+    top: 40;
+    padding: 3px;
+    z-index: 9999;
+    background-color: #e714ff;
+    border: 5px solid #e714ff;
+    border-radius: 25px;
+    font-weight: 400;
+}
+.card {
+    width: 300px;
+}
+.card-img-top {
+    height: 105px;
+}
+
+#results {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 25px;
+}
